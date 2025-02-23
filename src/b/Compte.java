@@ -3,7 +3,6 @@ public class Compte<T> {
     protected int numeroCompte;
     protected double solde;
     protected T devise;
-
     public Compte(int numeroCompte, double solde, T devise) {
         this.numeroCompte = numeroCompte;
         this.solde = solde;
@@ -22,7 +21,6 @@ public class Compte<T> {
     public void afficherSolde() {
         System.out.println("la solde de compte est: " + solde + " " + devise);
     }
-
     public static <T> void transferer(Compte<T> source, Compte<T> destination, double montant) {
         if (source.retirer(montant)) {
             destination.deposer(montant);
