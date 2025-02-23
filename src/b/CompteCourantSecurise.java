@@ -1,8 +1,6 @@
 package b;
-
 class CompteCourantSecurise<T> extends CompteCourant<T> implements Securisable {
     private String id;
-
     public CompteCourantSecurise(int numeroCompte, double solde, T devise, double limite, String id) {
         super(numeroCompte, solde, devise, limite);
         this.id = id;
